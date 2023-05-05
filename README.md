@@ -1,9 +1,9 @@
 # Evasão - FastAPI
 
-Este é um projeto que usa o framework FastAPI para construir uma API que permite realizar predições de evasão de alunos em cursos superiores.
-Instalação
+Este projeto usa o framework FastAPI para construir uma API que permite realizar predições de evasão de alunos em cursos superiores.
 
-## Execução
+## Instalação
+
 Para executar a aplicação, siga as instruções abaixo:
 
     1. Clone este repositório em sua máquina local.
