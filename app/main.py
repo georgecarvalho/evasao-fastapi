@@ -33,14 +33,14 @@ logging.basicConfig(level=logging.INFO, filename='sample.log', filemode='w', for
 
 # Initialize files
 xgb_model = XGBClassifier()
-xgb_model.load_model('data/xgb_model_2021_09_13_1042.pkl')
-nb_model = pickle.load(open('data/nb_model_2021_09_13_1042.pkl','rb'))
-lr_model = pickle.load(open('data/lr_model_2021_09_13_1042.pkl','rb'))
-encoder = pickle.load(open('data/ord_enc_2021_09_13_1042.pkl','rb'))
-scaler = pickle.load(open('data/std_scaler_2021_09_13_1042.pkl','rb'))
-features = pickle.load(open('data/features_2021_09_13_1042.pkl','rb'))
-numerical_features = pickle.load(open('data/numerical_features_to_scale_2021_09_13_1042.pkl','rb'))
-categ_features = pickle.load(open('data/categ_features_2021_09_13_1042.pkl','rb'))
+xgb_model.load_model('/code/app/data/xgb_model_2021_09_13_1042.pkl')
+nb_model = pickle.load(open('/code/app/data/nb_model_2021_09_13_1042.pkl','rb'))
+lr_model = pickle.load(open('/code/app/data/lr_model_2021_09_13_1042.pkl','rb'))
+encoder = pickle.load(open('/code/app/data/ord_enc_2021_09_13_1042.pkl','rb'))
+scaler = pickle.load(open('/code/app/data/std_scaler_2021_09_13_1042.pkl','rb'))
+features = pickle.load(open('/code/app/data/features_2021_09_13_1042.pkl','rb'))
+numerical_features = pickle.load(open('/code/app/data/numerical_features_to_scale_2021_09_13_1042.pkl','rb'))
+categ_features = pickle.load(open('/code/app/data/categ_features_2021_09_13_1042.pkl','rb'))
 
 class Data(BaseModel):
     campus:str
