@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routers import aluno_routers_v1
-from routers import aluno_routers_v2
+import aluno_routers_v1
+import aluno_routers_v2
 
 def create_app():
     app = FastAPI()
