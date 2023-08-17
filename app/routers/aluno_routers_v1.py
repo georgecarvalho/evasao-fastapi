@@ -24,6 +24,7 @@ xgb_model = XGBClassifier()
 xgb_model.load_model('data/xgb_model_2021_09_13_1042.pkl')
 encoder = pickle.load(open('data/ord_enc_2021_09_13_1042.pkl','rb'))
 scaler = pickle.load(open('data/std_scaler_2021_09_13_1042.pkl','rb'))
+features = pickle.load(open('data/features_2021_09_13_1042.pkl','rb'))
 numerical_features = pickle.load(open('data/numerical_features_to_scale_2021_09_13_1042.pkl','rb'))
 categ_features = pickle.load(open('data/categ_features_2021_09_13_1042.pkl','rb'))
 
