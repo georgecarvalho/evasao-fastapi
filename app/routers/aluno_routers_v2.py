@@ -21,7 +21,7 @@ my_logger = logging.getLogger()
 my_logger.setLevel(logging.DEBUG)
 logging.basicConfig(level=logging.INFO, filename='sample.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
 
-pipeline = pickle.load(open('data/pipeline20230816.pkl','rb'))
+pipeline = pickle.load(open('.data/pipeline20230816.pkl','rb'))
 
 class Aluno(BaseModel):
     campus:str
