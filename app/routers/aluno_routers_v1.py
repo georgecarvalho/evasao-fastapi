@@ -21,7 +21,7 @@ my_logger.setLevel(logging.DEBUG)
 logging.basicConfig(level=logging.INFO, filename='sample.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
 
 xgb_model = XGBClassifier()
-xgb_model.load_model('/code/app/dataxgb_model_2021_09_13_1042.pkl')
+xgb_model.load_model('/code/app/data/xgb_model_2021_09_13_1042.pkl')
 encoder = pickle.load(open('/code/app/data/ord_enc_2021_09_13_1042.pkl','rb'))
 scaler = pickle.load(open('/code/app/data/std_scaler_2021_09_13_1042.pkl','rb'))
 features = pickle.load(open('/code/app/data/features_2021_09_13_1042.pkl','rb'))
