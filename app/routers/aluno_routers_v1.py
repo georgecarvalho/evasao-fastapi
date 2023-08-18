@@ -84,6 +84,6 @@ async def predict(data: Aluno):
         # Create and return prediction
         y_pred = xgb_model.predict(X_test)
         return {"prediction": int(y_pred[0])}
-    except:
-        my_logger.error("Something went wrong!")
+    except Exception as e:
+        my_logger.critical(e, exc_info=True)
         return {"prediction": "error"}
