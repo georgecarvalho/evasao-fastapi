@@ -57,6 +57,6 @@ async def predict(data: Aluno):
         X_test = pd.DataFrame(data.dict(),index=[0])
         y_pred = pipeline.predict(X_test)
         return {"prediction": int(y_pred[0])}
-    except:
-        my_logger.error("Something went wrong!")
+    except Exception as e:
+        my_logger.critical(e, exc_info=True)
         return {"prediction": "error"}
